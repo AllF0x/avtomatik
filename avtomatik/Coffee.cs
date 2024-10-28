@@ -8,9 +8,9 @@ namespace avtomatik
 {
     internal class Coffee: Napitok
     {
-        private double water;
-        private double coffee;
-        private double milk;
-        private double sugar;
+        public double water { private get; set; }
+        public double coffee { private get; set; }
+        public double milk { private get; set; }
+        public double sugar { private get; set; }
     }
 }
