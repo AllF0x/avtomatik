@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace avtomatik
 {
-    internal class AvtomatBASE
+    internal class AvtomatBase
     {
         public string name;
         public int cash { get; private set; }

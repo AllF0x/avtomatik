@@ -1,6 +1,6 @@
 ﻿namespace avtomatik
 {
-    internal class AvtomatSCoffee : AvtomatBASE
+    internal class AvtomatWithCoffee : AvtomatBase
     {
         private double waterAmount;
         private double coffeeAmount;
