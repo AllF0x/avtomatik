@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace avtomatik
 {
-    internal class Coffee
+    internal class Coffee: Napitok
     {
+        private double water;
+        private double coffee;
+        private double milk;
+        private double sugar;
     }
 }

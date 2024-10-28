@@ -8,5 +8,7 @@ namespace avtomatik
 {
     internal class Napitok
     {
+        public int stoimost { get; set; }
+        public string nameNapitka;
     }
 }

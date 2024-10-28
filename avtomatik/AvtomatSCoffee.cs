@@ -38,7 +38,7 @@
             };
         }
 
-        public woid AvtomaticWork()
+        public void AvtomaticWork()
         {
             Console.WriteLine("Что вы хотите купить?(капучино, латте или американо)");
             string product = Convert.ToString(Console.ReadLine());
