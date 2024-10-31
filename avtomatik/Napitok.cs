@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace avtomatik
 {
-    internal class Napitok
+    abstract class Napitok
     {
         public int stoimost { get; set; }
         public string nameNapitka;

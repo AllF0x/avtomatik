@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace avtomatik
 {
-    internal class Soda
+    internal class Soda: Napitok
     {
     }
 }

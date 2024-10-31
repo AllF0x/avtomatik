@@ -50,8 +50,7 @@
                 {
                     Console.WriteLine("Вставте монетку и напишите её номенал");
                     int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
-                    
-                    double sdacha = cash - monetkaNomenal;
+                    double sdacha =  - monetkaNomenal;
                     Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
                 }
                 else if (otvet == "Нет" || otvet == "нет")
