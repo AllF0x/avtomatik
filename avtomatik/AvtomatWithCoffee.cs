@@ -7,6 +7,7 @@
         private double milkAmount;
         private double sugarAmount;
 
+       
         public static List<Coffee> ListNapitkov()
         {
             return new List<Coffee>()
@@ -16,8 +17,7 @@
                     nameNapitka = "американо",
                     water = 10,
                     milk = 0,
-                    sugar = 0,
-                    stoimost = 150
+                    sugar = 0
                 },
                 new Coffee()
                 {
@@ -50,15 +50,46 @@
                 {
                     Console.WriteLine("Вставте монетку и напишите её номенал");
                     int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
-                    double sdacha =  - monetkaNomenal;
-                    Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    int costAmericano = 160;
+                    //За сахар надбавка 10 рублей
+                    if (costAmericano <= monetkaNomenal)
+                    {
+                        double sdacha = costAmericano - monetkaNomenal;
+                        Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    }
+                    else
+                    {
+                        while (monetkaNomenal < costAmericano)
+                        {
+                            Console.WriteLine("Хей! У вас не хватает! Вставьте ещё монетку и напишите её номенал");
+                            int newMonetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                            monetkaNomenal += newMonetkaNomenal;
+                        }
+                        double sdacha = costAmericano - monetkaNomenal;
+                        Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    }
                 }
                 else if (otvet == "Нет" || otvet == "нет")
                 {
                     Console.WriteLine("Вставте монетку и напишите её номенал");
                     int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
-                    double sdacha = cash - monetkaNomenal;
-                    Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    int costAmericano = 150;
+                    if (costAmericano <= monetkaNomenal)
+                    {
+                        double sdacha = costAmericano - monetkaNomenal;
+                        Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    }
+                    else
+                    {
+                        while (monetkaNomenal < costAmericano)
+                        {
+                            Console.WriteLine("Хей! У вас не хватает! Вставьте ещё монетку и напишите её номенал");
+                            int newMonetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                            monetkaNomenal += newMonetkaNomenal;
+                        }
+                        double sdacha = costAmericano - monetkaNomenal;
+                        Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                    }
                 }
                 //авлпоклаоьплапапапапа
 
