@@ -96,12 +96,57 @@
                 string otvetSugar2 = Convert.ToString(Console.ReadLine());
                 Console.WriteLine("А молоко?(Да/Нет)");
                 string otvetMilk1 = Convert.ToString(Console.ReadLine());
-                    if (otvetMilk1 == "Да" || otvetSugar2 == "Да" || otvetSugar2 == "да" && otvetMilk1 == "да")
+                    if (otvetSugar2 == "Да" || otvetSugar2 == "да" || otvetMilk1 == "Да" && otvetMilk1 == "да")
                     {
                         Console.WriteLine("Вставте монетку и напишите её номенал");
                         int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
                         int costCappuccino = 190;
                         //За молоко и сахар надбавка 20
+                        if (costCappuccino <= monetkaNomenal)
+                        {
+                            double sdacha = costCappuccino - monetkaNomenal;
+                            Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                        }
+                        else
+                        {
+                            while (monetkaNomenal < costCappuccino)
+                            {
+                                Console.WriteLine("Хей! У вас не хватает! Вставьте ещё монетку и напишите её номенал");
+                                int newMonetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                                monetkaNomenal += newMonetkaNomenal;
+                            }
+                            double sdacha = costCappuccino - monetkaNomenal;
+                            Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                        }
+                    }
+                    else if (otvetSugar2 == "нет" || otvetSugar2 == "Нет" || otvetMilk1 == "Да" && otvetMilk1 == "да")
+                    {
+                        Console.WriteLine("Вставте монетку и напишите её номенал");
+                        int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                        int costCappuccino = 180;
+                        //за молоко надбавка 10 рублей
+                        if (costCappuccino <= monetkaNomenal)
+                        {
+                            double sdacha = costCappuccino - monetkaNomenal;
+                            Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                        }
+                        else
+                        {
+                            while (monetkaNomenal < costCappuccino)
+                            {
+                                Console.WriteLine("Хей! У вас не хватает! Вставьте ещё монетку и напишите её номенал");
+                                int newMonetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                                monetkaNomenal += newMonetkaNomenal;
+                            }
+                            double sdacha = costCappuccino - monetkaNomenal;
+                            Console.WriteLine($"Ваша сдача составила: {sdacha} рублей");
+                        }
+                    }
+                    else if (otvetSugar2 == "Да" || otvetSugar2 == "да" && otvetMilk1 == "Нет" || otvetMilk1 == "нет")
+                    {
+                        Console.WriteLine("Вставте монетку и напишите её номенал");
+                        int monetkaNomenal = Convert.ToInt32(Console.ReadLine());
+                        int costCappuccino = 180;
                         if (costCappuccino <= monetkaNomenal)
                         {
                             double sdacha = costCappuccino - monetkaNomenal;
