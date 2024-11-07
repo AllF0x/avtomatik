@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace avtomatik
+namespace MegaSigmaAutomat
 {
-    internal class AvtomatWithSoda: AvtomatBase
+    internal class SodaVendingAutomat: BaseVendingAutomat
     {
         //public static List<Soda> ListNapitkov()
         //{

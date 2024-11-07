@@ -1,4 +1,4 @@
-﻿namespace avtomatik
+﻿namespace MegaSigmaAutomat
 {
     internal class Program
     {

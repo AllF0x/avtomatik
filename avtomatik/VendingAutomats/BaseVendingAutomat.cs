@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace avtomatik
+namespace MegaSigmaAutomat
 {
-    abstract class AvtomatBase
+    abstract class BaseVendingAutomat
     {
         public string name;
         public int cash { get; private set; }

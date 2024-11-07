@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace avtomatik
+namespace MegaSigmaAutomat
 {
-    internal class Soda: Napitok
+    abstract class Drink
     {
+        public string nameNapitka;
     }
 }

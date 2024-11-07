@@ -1,6 +1,6 @@
-﻿namespace avtomatik
+﻿namespace MegaSigmaAutomat
 {
-    internal class AvtomatWithCoffee : AvtomatBase
+    internal class CoffeeVendingAutomat : BaseVendingAutomat
     {
         private double waterAmount;
         private double coffeeAmount;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace avtomatik
+namespace MegaSigmaAutomat
 {
-    internal class Coffee: Napitok
+    internal class Coffee: Drink
     {
         public double water { private get; set; }
         public double coffee { private get; set; }
